@@ -1,4 +1,4 @@
-FROM armv7/armhf-ubuntu:14.04.1
+FROM armv7/armhf-ubuntu:16.04
 
 ENV hadoop_ver 2.7.1
 ENV spark_ver 1.6.2

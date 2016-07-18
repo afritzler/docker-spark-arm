@@ -1,6 +1,6 @@
-all: spark zeppelin
-push: push-spark push-zeppelin
-.PHONY: push push-spark push-zeppelin spark zeppelin zeppelin-build
+all: spark
+push: push-spark
+.PHONY: push push-spark spark
 
 TAG = 1.6.2
 

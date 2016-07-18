@@ -9,8 +9,8 @@ spark:
 	docker tag afritzler/spark-arm afritzler/spark-arm:$(TAG)
 
 push-spark: spark
-	gcloud docker push afritzler/spark-arm
-	gcloud docker push afritzler/spark-arm:$(TAG)
+	docker push afritzler/spark-arm
+	docker push afritzler/spark-arm:$(TAG)
 
 clean:
 	docker rmi afritzler/spark-arm:$(TAG) || :

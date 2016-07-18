@@ -1,13 +1,7 @@
-FROM armv7/armhf-ubuntu:16.04
+FROM afritzler/openjdk-arm:8
 
 ENV hadoop_ver 2.7.1
 ENV spark_ver 1.6.2
-
-# Install OpenJDK 8
-RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
 
 # Get Hadoop from US Apache mirror and extract just the native
 # libs. (Until we care about running HDFS with these containers, this
